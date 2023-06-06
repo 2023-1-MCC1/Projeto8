@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cn4m7dnbj1u7y"]
+
+[ext_resource type="Texture2D" uid="uid://2ng4e5k3huwe" path="res://Tela de início.jpg" id="1_o5usx"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TelaDeInício" type="Sprite2D" parent="."]
+position = Vector2(974, 551)
+scale = Vector2(1.4202, 1.42188)
+texture = ExtResource("1_o5usx")

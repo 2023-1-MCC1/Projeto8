@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dumkm8wpkrrb4"]
+
+[ext_resource type="Texture2D" uid="uid://cp2q5yj8sgeea" path="res://Quadro de fases.jpg" id="1_afgkq"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="QuadroDeFases" type="Sprite2D" parent="."]
+position = Vector2(964, 543)
+scale = Vector2(1.41288, 1.41406)
+texture = ExtResource("1_afgkq")
