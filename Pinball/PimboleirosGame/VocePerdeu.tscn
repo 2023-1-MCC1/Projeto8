@@ -1,3 +1,21 @@
-[gd_scene format=3 uid="uid://npy0yddfhrus"]
+[gd_scene load_steps=3 format=3 uid="uid://npy0yddfhrus"]
+
+[ext_resource type="Script" path="res://VocePerdeu.cs" id="1_os7rg"]
+[ext_resource type="Texture2D" uid="uid://jhtfospy5bhi" path="res://Sua cidade foi destruida!.jpg" id="1_tvanj"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_os7rg")
+
+[node name="SuaCidadeFoiDestruida!" type="Sprite2D" parent="."]
+position = Vector2(798.5, 449.5)
+scale = Vector2(1.00563, 1.00778)
+texture = ExtResource("1_tvanj")
+
+[node name="Button" type="Button" parent="SuaCidadeFoiDestruida!"]
+offset_left = -381.0
+offset_top = 4.0
+offset_right = 309.0
+offset_bottom = 74.0
+scale = Vector2(1.00394, 0.964022)
+
+[connection signal="pressed" from="SuaCidadeFoiDestruida!/Button" to="." method="_on_button_pressed"]
