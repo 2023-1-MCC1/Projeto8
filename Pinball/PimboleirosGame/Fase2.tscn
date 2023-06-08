@@ -1,23 +1,25 @@
-[gd_scene load_steps=18 format=3 uid="uid://mobyh3nsk1wj"]
+[gd_scene load_steps=24 format=3 uid="uid://mobyh3nsk1wj"]
 
+[ext_resource type="Script" path="res://Fase2.cs" id="1_6yo0x"]
+[ext_resource type="Texture2D" uid="uid://7oehvtt4iua3" path="res://_fa26becf-a72c-484f-aedc-dec9251fe2f7.jpg" id="1_441hg"]
 [ext_resource type="Texture2D" uid="uid://dquk1meea46uf" path="res://1.png" id="3_v5ljv"]
+[ext_resource type="Texture2D" uid="uid://b3kws8litpoek" path="res://brick.jpg" id="4_wdra7"]
 [ext_resource type="Texture2D" uid="uid://dgdhuyxrp01iq" path="res://flipper.png" id="7_tgqyp"]
 [ext_resource type="Script" path="res://FlipperL.cs" id="8_ue57d"]
 [ext_resource type="Texture2D" uid="uid://b7phsol0u2u2q" path="res://3.png" id="9_2slsx"]
 [ext_resource type="Script" path="res://Launcher.cs" id="9_04fb1"]
-[ext_resource type="Texture2D" uid="uid://do4it7ffalj2v" path="res://4.png" id="10_kbujk"]
 [ext_resource type="Script" path="res://Flipper_R.cs" id="10_w45m8"]
-[ext_resource type="Texture2D" uid="uid://dmdverpeprc6v" path="res://images__1_-removebg-preview.png" id="11_f12o1"]
 [ext_resource type="Script" path="res://Ball.cs" id="12_iiay5"]
 [ext_resource type="Texture2D" uid="uid://bu0hwxtofihr5" path="res://6.png" id="12_njjlx"]
+[ext_resource type="Texture2D" uid="uid://cyxogy0ivdjad" path="res://Placa.png" id="13_10d1u"]
 [ext_resource type="Texture2D" uid="uid://3ba0fctwqa2g" path="res://ball.png" id="13_kovls"]
-[ext_resource type="Texture2D" uid="uid://dskyklkv1fhi7" path="res://11.png" id="13_o7dln"]
+[ext_resource type="Texture2D" uid="uid://cjbyi212aprj1" path="res://Design_sem_nome__1_-removebg-preview.png" id="14_b516o"]
+[ext_resource type="Texture2D" uid="uid://ddr8es8rap4w2" path="res://Estetoscópio.png" id="15_h534s"]
+[ext_resource type="Texture2D" uid="uid://ce0eg3mgonbgs" path="res://Pílula.png" id="16_k538a"]
+[ext_resource type="Texture2D" uid="uid://cbkmjjc662g18" path="res://New Piskel-1.png.png" id="17_bg6a6"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_asavj"]
 radius = 23.5372
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_7july"]
-radius = 533.709
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_u73fw"]
 radius = 520.384
@@ -25,143 +27,221 @@ radius = 520.384
 [sub_resource type="CircleShape2D" id="CircleShape2D_2k66m"]
 radius = 526.667
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uceah"]
+size = Vector2(5.77798, 27.6668)
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_qfqwi"]
 radius = 532.395
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8y735"]
+size = Vector2(1876, 96)
+
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_6yo0x")
+
+[node name="Fa26Becf-a72c-484f-aedc-dec9251Fe2f7" type="Sprite2D" parent="."]
+position = Vector2(782, 471)
+scale = Vector2(1.72852, 1.07422)
+texture = ExtResource("1_441hg")
 
 [node name="walls" type="Node2D" parent="."]
 
 [node name="Polygon2D" type="Polygon2D" parent="walls"]
-polygon = PackedVector2Array(1919, -2, 1920, 185, 1908, 139, 1896, 85, 1867, 40, 1816, 16, 1680, 20, 1688, -4, 1726, -8, 1774, -5)
+position = Vector2(-321, 9)
+color = Color(0.117647, 0.00392157, 0.223529, 1)
+polygon = PackedVector2Array(1920, -20, 1920, 185, 1908, 139, 1896, 85, 1867, 40, 1816, 16, 1698, 7, 1675, 7, 1666, -23, 1725, -20, 1770, -23)
 
 [node name="Polygon2D2" type="Polygon2D" parent="walls"]
-polygon = PackedVector2Array(1909, 143, 1901, 1018, 1920, 1017, 1920, 142)
-
-[node name="Polygon2D4" type="Polygon2D" parent="walls"]
-polygon = PackedVector2Array(1365, 1023, 1566, 1030, 1762, 1027, 1760, 174, 1734, 171, 1723, 765, 1365, 848)
+position = Vector2(-323, -131)
+color = Color(0.117647, 0.00392157, 0.223529, 1)
+polygon = PackedVector2Array(1909, 143, 1903.16, 781.367, 1901, 1018, 1920, 1017, 1920, 142)
 
 [node name="Polygon2D3" type="Polygon2D" parent="walls"]
-polygon = PackedVector2Array(1681, 17, 57, 19, 37, 32, 23, 54, 20, 89, 22, 771, 612, 845, 597, 1022, -19, 1020, -17, -6, 1690, -4)
+position = Vector2(-1893, -128)
+color = Color(0.117647, 0.00392157, 0.223529, 1)
+polygon = PackedVector2Array(1804, 93, 1736, 605, 1750, 746, 1665, 1026, 2033, 1017, 2060, 809, 1971, 140, 1912, 135)
+
+[node name="Polygon2D4" type="Polygon2D" parent="walls"]
+position = Vector2(-271, -141)
+color = Color(0.117647, 0.00392157, 0.223529, 1)
+polygon = PackedVector2Array(1288, 1031, 1566, 1030, 1762, 1027, 1768.54, 615.187, 1774, 288, 1729, 310, 1609, 693, 1317, 787)
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="walls"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="walls/CharacterBody2D"]
-polygon = PackedVector2Array(1901, 1014, 1920, 1012, 1941, -95, -54, -86, -8, 942, 597, 956, 605, 925, 554, 920, 612, 844, 21, 770, 20, 88, 23, 54, 38, 31, 58, 19, 1680, 20, 1816, 16, 1847, 56, 1876, 97, 1909, 143)
+position = Vector2(-332, -136)
+polygon = PackedVector2Array(1931, 119, 1960, 1019, 1921, 1019, 1909, 585, 1912, 231, 1920.24, 182.416)
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="walls/CharacterBody2D"]
-polygon = PackedVector2Array(1762, 1026, 1760, 174, 1734, 171, 1722, 766, 1371, 847, 1398, 888, 1366, 936, 1366, 1021)
+polygon = PackedVector2Array(-4, -27, 83, -31, 170, 683, 142, 893, -233, 891)
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="walls/CharacterBody2D"]
+polygon = PackedVector2Array(1345, -17, 1592, -10, 1590, 111, 1549, 43, 1500, 19, 1356, 14)
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="walls/CharacterBody2D"]
+polygon = PackedVector2Array(1458, 170, 1342, 555, 1039, 646, 1100, 751, 1083, 787, 1042, 821, 1016, 892, 1482, 888, 1503, 150)
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="walls/CharacterBody2D"]
+polygon = PackedVector2Array(1372, -60, 1390, 15, 3, 17, 0, -50)
+
+[node name="Polygon2D5" type="Polygon2D" parent="walls"]
+color = Color(0.117647, 0.00392157, 0.223529, 1)
+polygon = PackedVector2Array(6, -40, 1372, -57, 1380, 15, 2, 17)
 
 [node name="FlipperL" type="Sprite2D" parent="."]
-position = Vector2(1209, 920)
-rotation = 3.14159
-scale = Vector2(2.13, 2)
+position = Vector2(893, 757)
+rotation = 6.27173
+scale = Vector2(2.42863, 2.48112)
 texture = ExtResource("7_tgqyp")
+flip_h = true
 script = ExtResource("8_ue57d")
+metadata/_edit_group_ = true
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="FlipperL"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="FlipperL/CharacterBody2D"]
+position = Vector2(-1.23456, -2.82092)
+rotation = -3.13031
 polygon = PackedVector2Array(-68.5446, 22, -37.5587, 21, 5.16437, 17, 65.2583, 13.5, 80.7513, 11.9999, 84.5071, 8.49994, 87.7935, 3.49994, 88.263, -4.00006, 85.4461, -9.50006, 78.4038, -14.5001, 62.4414, -15, 29.5775, -17, -53.5211, -22, -73.2394, -21.5, -80.7512, -17.5, -84.9765, -12.5, -87.3239, -5.50003, -88.2629, 0.499969, -87.3239, 6.49997, -84.9765, 11.5, -79.8122, 17)
 
 [node name="Launcher" type="Polygon2D" parent="."]
-position = Vector2(1818, 936)
-scale = Vector2(5, 5)
-polygon = PackedVector2Array(-7, -2, 13, -2, 13, 17, -7, 17)
+position = Vector2(1525.16, 818)
+scale = Vector2(4.88, 4.01606)
+color = Color(0.117647, 0.00392157, 0.223529, 1)
+texture = ExtResource("4_wdra7")
+polygon = PackedVector2Array(-8.43445, -1.494, 12.877, -1.743, 13, 17, -8.63931, 17.181, -8.6108, 14.5822)
 script = ExtResource("9_04fb1")
+metadata/_edit_group_ = true
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="Launcher"]
-position = Vector2(3.59995, 7.99998)
+position = Vector2(3.19998, 8.59997)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Launcher/CharacterBody2D"]
-position = Vector2(-3.59995, -7.99998)
-polygon = PackedVector2Array(-7, -1.99998, 13, -1.99998, 13, 17, -7, 17)
-
-[node name="Images1-removebg-preview" type="Sprite2D" parent="Launcher"]
-position = Vector2(3.5, 7.20001)
-scale = Vector2(0.139, 0.192)
-texture = ExtResource("11_f12o1")
+position = Vector2(-3.39999, -11.2962)
+scale = Vector2(1, 1.12367)
+polygon = PackedVector2Array(-7.18094, 0.996017, 12.3429, 1.24501, 13, 17, -7, 17)
 
 [node name="Flipper_R" type="Sprite2D" parent="."]
-position = Vector2(767, 927)
-scale = Vector2(2, 2)
+position = Vector2(327, 777)
+scale = Vector2(2.51043, 2.60993)
 texture = ExtResource("7_tgqyp")
 offset = Vector2(3.6084, -0.526398)
 script = ExtResource("10_w45m8")
+metadata/_edit_group_ = true
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="Flipper_R"]
 position = Vector2(-58.8916, -3.02649)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Flipper_R/CharacterBody2D"]
 position = Vector2(66.3916, 1.02649)
-polygon = PackedVector2Array(-70.3198, 20.6974, 81.5, 10.5, 86.5, 5.5, 85.5206, 1.86206, 87, -1.5, 85.5, -8, 81.5, -12, -71.5, -22, -84.5, -20, -86.5, -12.5, -87.5, 3, -83.3459, 11.1675, -76.8976, 18.3033)
+polygon = PackedVector2Array(-68.4457, 21.1576, -13.7199, 16.8958, 81.5, 10.5, 86.5, 5.5, 85.5206, 1.86206, 87, -1.5, 85.5, -8, 81.5, -12, -71.6325, -20.606, -83.9809, -17.1576, -88.761, -11.4103, -91.5494, 3.53259, -87.1676, 15.4103, -78.8025, 21.9239)
 
 [node name="Ball" type="RigidBody2D" parent="."]
-position = Vector2(1832, 875)
+position = Vector2(1542, 775)
 mass = 0.01
 freeze_mode = 1
 script = ExtResource("12_iiay5")
+metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ball"]
+position = Vector2(1, -7)
 shape = SubResource("CircleShape2D_asavj")
 
 [node name="Ball" type="Sprite2D" parent="Ball"]
+position = Vector2(-2.32458e-05, -4.75002)
+scale = Vector2(1.06383, 1.07447)
 texture = ExtResource("13_kovls")
 
-[node name="Bumper1" type="Sprite2D" parent="."]
-position = Vector2(249, 227)
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("9_2slsx")
-
-[node name="CharacterBody2D" type="CharacterBody2D" parent="Bumper1"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Bumper1/CharacterBody2D"]
-shape = SubResource("CircleShape2D_7july")
-
 [node name="Bumper_2" type="Sprite2D" parent="."]
-position = Vector2(1468, 444)
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("10_kbujk")
+position = Vector2(490, 461)
+scale = Vector2(0.164352, 0.12037)
+texture = ExtResource("9_2slsx")
+metadata/_edit_group_ = true
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="Bumper_2"]
+position = Vector2(1746.67, -960)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bumper_2/CharacterBody2D"]
+position = Vector2(-1746.66, 946.667)
 shape = SubResource("CircleShape2D_u73fw")
 
+[node name="Estetoscópio" type="Sprite2D" parent="Bumper_2"]
+position = Vector2(663.333, 456.667)
+scale = Vector2(7.02667, 7.10667)
+texture = ExtResource("15_h534s")
+
 [node name="Bumper_3" type="Sprite2D" parent="."]
-position = Vector2(489, 590)
+position = Vector2(251, 163)
 scale = Vector2(0.15, 0.15)
 texture = ExtResource("3_v5ljv")
+metadata/_edit_group_ = true
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="Bumper_3"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bumper_3/CharacterBody2D"]
 shape = SubResource("CircleShape2D_2k66m")
 
-[node name="Bumper_4" type="Sprite2D" parent="Bumper_3"]
-position = Vector2(2940, -1013.33)
-scale = Vector2(1.31574, 1)
-texture = ExtResource("12_njjlx")
+[node name="Pílula" type="Sprite2D" parent="Bumper_3"]
+position = Vector2(666.667, 460)
+scale = Vector2(7.2, 7.17333)
+texture = ExtResource("16_k538a")
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="Bumper_3/Bumper_4"]
+[node name="NewPiskel" type="Sprite2D" parent="."]
+position = Vector2(832, 230)
+scale = Vector2(15.0937, 19.5156)
+texture = ExtResource("13_10d1u")
+
+[node name="NewPiskel-1png" type="Sprite2D" parent="."]
+position = Vector2(659, 374)
+scale = Vector2(8.3125, 8.15625)
+texture = ExtResource("17_bg6a6")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="NewPiskel-1png"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NewPiskel-1png/StaticBody2D"]
+position = Vector2(0.0845184, -0.514835)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_uceah")
+
+[node name="Bumper_4" type="Sprite2D" parent="."]
+position = Vector2(1175.21, 250.5)
+scale = Vector2(0.18294, 0.126852)
+texture = ExtResource("12_njjlx")
+metadata/_edit_group_ = true
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="Bumper_4"]
 position = Vector2(986.666, -217.777)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Bumper_3/Bumper_4/CharacterBody2D"]
-position = Vector2(-991.732, 204.444)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bumper_4/CharacterBody2D"]
+position = Vector2(-971.465, 231.11)
 shape = SubResource("CircleShape2D_qfqwi")
 
-[node name="Bumper2" type="Sprite2D" parent="."]
-position = Vector2(1262, 207)
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("9_2slsx")
+[node name="DesignSemNome1-removebg-preview" type="Sprite2D" parent="Bumper_4"]
+position = Vector2(-1200.84, -520)
+scale = Vector2(7.28614, 7.2)
+texture = ExtResource("14_b516o")
 
-[node name="11" type="Sprite2D" parent="Bumper2"]
-position = Vector2(-1.66658, -1.6667)
-scale = Vector2(1.04012, 1.03395)
-texture = ExtResource("13_o7dln")
+[node name="NewPiskel-1png2" type="Sprite2D" parent="."]
+position = Vector2(943, 379)
+scale = Vector2(9.0625, 8.09375)
+texture = ExtResource("17_bg6a6")
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="Bumper2"]
+[node name="StaticBody2D" type="StaticBody2D" parent="NewPiskel-1png2"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Bumper2/CharacterBody2D"]
-position = Vector2(-13.333, -6.66675)
-shape = SubResource("CircleShape2D_7july")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NewPiskel-1png2/StaticBody2D"]
+position = Vector2(0.0845184, -0.514835)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_uceah")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(792, 1118)
+shape = SubResource("RectangleShape2D_8y735")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

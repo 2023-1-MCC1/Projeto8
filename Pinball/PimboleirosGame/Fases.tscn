@@ -1,10 +1,50 @@
-[gd_scene load_steps=2 format=3 uid="uid://dumkm8wpkrrb4"]
+[gd_scene load_steps=3 format=3 uid="uid://dumkm8wpkrrb4"]
 
 [ext_resource type="Texture2D" uid="uid://cp2q5yj8sgeea" path="res://Quadro de fases.jpg" id="1_afgkq"]
+[ext_resource type="Script" path="res://Fases.cs" id="1_kksvv"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_kksvv")
 
 [node name="QuadroDeFases" type="Sprite2D" parent="."]
-position = Vector2(964, 543)
-scale = Vector2(1.41288, 1.41406)
+position = Vector2(797.501, 451.5)
+scale = Vector2(1.1691, 1.17578)
 texture = ExtResource("1_afgkq")
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 313.0
+offset_top = 433.0
+offset_right = 441.0
+offset_bottom = 552.0
+theme_override_font_sizes/font_size = 60
+text = "1"
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 1086.0
+offset_top = 430.0
+offset_right = 1214.0
+offset_bottom = 549.0
+theme_override_font_sizes/font_size = 60
+text = "3
+"
+
+[node name="Button4" type="Button" parent="."]
+offset_left = 718.0
+offset_top = 433.0
+offset_right = 846.0
+offset_bottom = 552.0
+theme_override_font_sizes/font_size = 60
+text = "2"
+
+[node name="Button" type="Button" parent="."]
+offset_left = 6.0
+offset_top = 788.0
+offset_right = 389.0
+offset_bottom = 898.0
+theme_override_font_sizes/font_size = 60
+text = "VOLTAR"
+
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

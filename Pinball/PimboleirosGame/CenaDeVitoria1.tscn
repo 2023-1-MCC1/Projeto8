@@ -1,3 +1,22 @@
-[gd_scene format=3 uid="uid://7ioygje1d1bk"]
+[gd_scene load_steps=3 format=3 uid="uid://7ioygje1d1bk"]
+
+[ext_resource type="Texture2D" uid="uid://5p8biwgm4t0p" path="res://Parabéns!.jpg" id="1_ap3hd"]
+[ext_resource type="Script" path="res://CenaDeVitoria1.cs" id="1_bdohp"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_bdohp")
+
+[node name="Parabéns!" type="Sprite2D" parent="."]
+position = Vector2(800, 455)
+texture = ExtResource("1_ap3hd")
+
+[node name="Button" type="Button" parent="."]
+light_mask = 0
+offset_left = 642.0
+offset_top = 610.0
+offset_right = 1032.0
+offset_bottom = 690.0
+theme_override_font_sizes/font_size = 40
+text = "JOGAR NOVAMENTE"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

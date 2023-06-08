@@ -1,23 +1,24 @@
-[gd_scene load_steps=23 format=3 uid="uid://bvaj78uj0gypt"]
+[gd_scene load_steps=26 format=3 uid="uid://dthojig258o65"]
 
-[ext_resource type="Texture2D" uid="uid://f41wflhpprt4" path="res://_8bc574e6-0f40-4452-8cca-f72147d26908.jpg" id="1_ggtvg"]
-[ext_resource type="Script" path="res://Global.cs" id="1_yofkp"]
-[ext_resource type="Script" path="res://Flipper_R.cs" id="2_ntjp4"]
-[ext_resource type="Texture2D" uid="uid://bu0hwxtofihr5" path="res://6.png" id="2_xsyiy"]
-[ext_resource type="Script" path="res://Launcher.cs" id="5_3f34v"]
-[ext_resource type="Script" path="res://Ball.cs" id="5_cxldm"]
-[ext_resource type="Texture2D" uid="uid://b7phsol0u2u2q" path="res://3.png" id="5_jdc6x"]
-[ext_resource type="Texture2D" uid="uid://do4it7ffalj2v" path="res://4.png" id="6_dy7yb"]
-[ext_resource type="Script" path="res://FlipperL.cs" id="11_4vt6q"]
-[ext_resource type="Texture2D" uid="uid://dgdhuyxrp01iq" path="res://flipper.png" id="13_lbt1v"]
-[ext_resource type="Texture2D" uid="uid://cyxogy0ivdjad" path="res://Placa.png" id="13_vumxr"]
-[ext_resource type="Texture2D" uid="uid://3ba0fctwqa2g" path="res://ball.png" id="14_54y15"]
-[ext_resource type="Texture2D" uid="uid://cm7h74n5aje61" path="res://Design_sem_nome-removebg-preview.png" id="14_fihh6"]
-[ext_resource type="Texture2D" uid="uid://dt8d0lpno410e" path="res://Design_sem_nome-removebg-preview (1).png" id="15_y5s52"]
-[ext_resource type="Texture2D" uid="uid://dx7pmygsiudxe" path="res://privada-removebg-preview.png" id="16_kmk08"]
-[ext_resource type="Texture2D" uid="uid://b6sufi8aq25i8" path="res://Dinheiro.png" id="17_o8gpv"]
-[ext_resource type="Texture2D" uid="uid://cbkmjjc662g18" path="res://New Piskel-1.png.png" id="18_0xp8u"]
-[ext_resource type="Texture2D" uid="uid://dsc620uebyekh" path="res://Menu.png" id="18_y4tjm"]
+[ext_resource type="Script" path="res://Fase1.cs" id="1_itbtu"]
+[ext_resource type="Texture2D" uid="uid://f41wflhpprt4" path="res://_8bc574e6-0f40-4452-8cca-f72147d26908.jpg" id="1_x8dpc"]
+[ext_resource type="Script" path="res://Global.cs" id="2_w0t7m"]
+[ext_resource type="Texture2D" uid="uid://dgdhuyxrp01iq" path="res://flipper.png" id="3_tjoc6"]
+[ext_resource type="Script" path="res://Flipper_R.cs" id="4_dthva"]
+[ext_resource type="Script" path="res://Ball.cs" id="5_03ohj"]
+[ext_resource type="Texture2D" uid="uid://3ba0fctwqa2g" path="res://ball.png" id="6_xtwb6"]
+[ext_resource type="Script" path="res://Launcher.cs" id="7_2g5p3"]
+[ext_resource type="Texture2D" uid="uid://b7phsol0u2u2q" path="res://3.png" id="8_yr65b"]
+[ext_resource type="Texture2D" uid="uid://dx7pmygsiudxe" path="res://privada-removebg-preview.png" id="9_jhgd6"]
+[ext_resource type="Texture2D" uid="uid://do4it7ffalj2v" path="res://4.png" id="10_yl5rx"]
+[ext_resource type="Texture2D" uid="uid://b6sufi8aq25i8" path="res://Dinheiro.png" id="11_j8ijw"]
+[ext_resource type="Texture2D" uid="uid://bu0hwxtofihr5" path="res://6.png" id="12_cfeh4"]
+[ext_resource type="Texture2D" uid="uid://dt8d0lpno410e" path="res://Design_sem_nome-removebg-preview (1).png" id="13_sortd"]
+[ext_resource type="Script" path="res://FlipperL.cs" id="14_ev5y3"]
+[ext_resource type="Texture2D" uid="uid://cm7h74n5aje61" path="res://Design_sem_nome-removebg-preview.png" id="15_ny4q7"]
+[ext_resource type="Texture2D" uid="uid://cyxogy0ivdjad" path="res://Placa.png" id="16_xv6oj"]
+[ext_resource type="Texture2D" uid="uid://dsc620uebyekh" path="res://Menu.png" id="17_r6c86"]
+[ext_resource type="Texture2D" uid="uid://cbkmjjc662g18" path="res://New Piskel-1.png.png" id="18_5c3rv"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_x5g02"]
 radius = 23.0217
@@ -31,25 +32,32 @@ radius = 520.384
 [sub_resource type="CircleShape2D" id="CircleShape2D_f7v60"]
 radius = 536.698
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_630k1"]
+size = Vector2(5.77798, 27.6668)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ekgn6"]
+size = Vector2(1846, 107)
+
 [node name="Game" type="Node2D"]
 position = Vector2(0, 3)
+script = ExtResource("1_itbtu")
 
 [node name="8Bc574e6-0f40-4452-8Cca-f72147d26908" type="Sprite2D" parent="."]
 position = Vector2(807, 462)
 scale = Vector2(1.62891, 0.972656)
-texture = ExtResource("1_ggtvg")
+texture = ExtResource("1_x8dpc")
 
 [node name="Global" type="Node2D" parent="."]
-script = ExtResource("1_yofkp")
+script = ExtResource("2_w0t7m")
 
 [node name="Flipper_R" type="Sprite2D" parent="Global"]
 top_level = true
 position = Vector2(533, 832)
 rotation = 0.0959931
 scale = Vector2(2, 2)
-texture = ExtResource("13_lbt1v")
+texture = ExtResource("3_tjoc6")
 offset = Vector2(3.6084, -0.526398)
-script = ExtResource("2_ntjp4")
+script = ExtResource("4_dthva")
 metadata/_edit_group_ = true
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="Global/Flipper_R"]
@@ -63,21 +71,21 @@ polygon = PackedVector2Array(-71.8063, 22.7591, 76.939, 12.9573, 83.1697, 6.8593
 position = Vector2(1545, 767)
 mass = 0.01
 freeze_mode = 1
-script = ExtResource("5_cxldm")
+script = ExtResource("5_03ohj")
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Global/Ball"]
 shape = SubResource("CircleShape2D_x5g02")
 
-[node name="Ball" type="Sprite2D" parent="Global/Ball/CollisionShape2D"]
-texture = ExtResource("14_54y15")
+[node name="BallSprite" type="Sprite2D" parent="Global/Ball/CollisionShape2D"]
+texture = ExtResource("6_xtwb6")
 
 [node name="Launcher" type="Polygon2D" parent="Global"]
 position = Vector2(1535, 811)
 scale = Vector2(5, 5)
 color = Color(0.117647, 0.00392157, 0.223529, 1)
 polygon = PackedVector2Array(-7, -2, 13, -2, 13, 17, 4.9429, 17, -7, 17)
-script = ExtResource("5_3f34v")
+script = ExtResource("7_2g5p3")
 metadata/_edit_group_ = true
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="Global/Launcher"]
@@ -92,7 +100,7 @@ polygon = PackedVector2Array(-7, -1.99998, 13, -1.99998, 13, 17, -7, 17)
 [node name="Bumper_1" type="Sprite2D" parent="Global"]
 position = Vector2(1241, 121)
 scale = Vector2(0.15, 0.15)
-texture = ExtResource("5_jdc6x")
+texture = ExtResource("8_yr65b")
 metadata/_edit_group_ = true
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="Global/Bumper_1"]
@@ -103,12 +111,12 @@ shape = SubResource("CircleShape2D_pn5h2")
 [node name="Privada-removebg-preview" type="Sprite2D" parent="Global/Bumper_1"]
 position = Vector2(-120, 0)
 scale = Vector2(7.14667, 7.10667)
-texture = ExtResource("16_kmk08")
+texture = ExtResource("9_jhgd6")
 
 [node name="Bumper_2" type="Sprite2D" parent="Global"]
 position = Vector2(348, 165)
 scale = Vector2(0.118519, 0.125926)
-texture = ExtResource("6_dy7yb")
+texture = ExtResource("10_yl5rx")
 metadata/_edit_group_ = true
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="Global/Bumper_2"]
@@ -120,12 +128,12 @@ shape = SubResource("CircleShape2D_jm15m")
 [node name="Dinheiro" type="Sprite2D" parent="Global/Bumper_2"]
 position = Vector2(691.872, 464.559)
 scale = Vector2(7.35747, 7.09941)
-texture = ExtResource("17_o8gpv")
+texture = ExtResource("11_j8ijw")
 
 [node name="Bumper_4" type="Sprite2D" parent="Global"]
 position = Vector2(821, 360)
 scale = Vector2(0.148148, 0.140741)
-texture = ExtResource("2_xsyiy")
+texture = ExtResource("12_cfeh4")
 metadata/_edit_group_ = true
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="Global/Bumper_4"]
@@ -137,7 +145,7 @@ shape = SubResource("CircleShape2D_f7v60")
 [node name="DesignSemNome-removebg-preview(1)" type="Sprite2D" parent="Global/Bumper_4"]
 position = Vector2(-116.666, 9.99976)
 scale = Vector2(7.4, 7.26667)
-texture = ExtResource("15_y5s52")
+texture = ExtResource("13_sortd")
 
 [node name="walls" type="Node2D" parent="Global"]
 
@@ -173,9 +181,9 @@ polygon = PackedVector2Array(1499, 895, 1511, 201, 1476, 189, 1437, 634, 1259, 7
 position = Vector2(1079, 811)
 rotation = 2.94437
 scale = Vector2(2.13, 2)
-texture = ExtResource("13_lbt1v")
+texture = ExtResource("3_tjoc6")
 flip_h = true
-script = ExtResource("11_4vt6q")
+script = ExtResource("14_ev5y3")
 metadata/_edit_group_ = true
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="FlipperL"]
@@ -188,7 +196,7 @@ polygon = PackedVector2Array(-68.5446, 22, -37.5587, 21, 5.16437, 17, 65.2583, 1
 [node name="Bumper_1" type="Sprite2D" parent="."]
 position = Vector2(213, 479)
 scale = Vector2(0.12037, 0.126852)
-texture = ExtResource("5_jdc6x")
+texture = ExtResource("8_yr65b")
 metadata/_edit_group_ = true
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="Bumper_1"]
@@ -200,17 +208,17 @@ shape = SubResource("CircleShape2D_pn5h2")
 [node name="DesignSemNome-removebg-preview" type="Sprite2D" parent="Bumper_1"]
 position = Vector2(58.1538, 189.197)
 scale = Vector2(7.4271, 7.20525)
-texture = ExtResource("14_fihh6")
+texture = ExtResource("15_ny4q7")
 
 [node name="NewPiskel" type="Sprite2D" parent="."]
 position = Vector2(822, 230)
 scale = Vector2(15.0937, 19.5156)
-texture = ExtResource("13_vumxr")
+texture = ExtResource("16_xv6oj")
 
 [node name="Menu" type="Sprite2D" parent="."]
 position = Vector2(1540, 59)
 scale = Vector2(5.375, 5.53125)
-texture = ExtResource("18_y4tjm")
+texture = ExtResource("17_r6c86")
 
 [node name="Button" type="Button" parent="."]
 visible = false
@@ -219,24 +227,43 @@ offset_top = 23.0
 offset_right = 1584.0
 offset_bottom = 71.0
 
-[node name="Label" type="Label" parent="."]
-offset_left = 721.0
-offset_top = 86.0
-offset_right = 923.0
-offset_bottom = 178.0
-theme_override_font_sizes/font_size = 60
-text = "Pontos"
-horizontal_alignment = 1
-vertical_alignment = 1
-
 [node name="NewPiskel-1png" type="Sprite2D" parent="."]
 position = Vector2(552, 447)
 rotation = 0.605629
 scale = Vector2(6.35972, 5.58922)
-texture = ExtResource("18_0xp8u")
+texture = ExtResource("18_5c3rv")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="NewPiskel-1png"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NewPiskel-1png/StaticBody2D"]
+position = Vector2(0.0845184, -0.514835)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_630k1")
 
 [node name="NewPiskel-1png2" type="Sprite2D" parent="."]
 position = Vector2(1081, 438)
 rotation = -0.345575
 scale = Vector2(6.52989, 5.60565)
-texture = ExtResource("18_0xp8u")
+texture = ExtResource("18_5c3rv")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="NewPiskel-1png2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NewPiskel-1png2/StaticBody2D"]
+position = Vector2(0.0845184, -0.514835)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_630k1")
+
+[node name="Timer" type="Timer" parent="."]
+process_callback = 0
+wait_time = 10.0
+one_shot = true
+autostart = true
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(809, 1069)
+shape = SubResource("RectangleShape2D_ekgn6")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
