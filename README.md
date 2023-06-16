@@ -55,7 +55,9 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 -<a href="https://godotengine.org/download">GODOT</a>
 
 ## 🗃 Histórico de lançamentos
-
+* 0.2 - 16/06 
+    * Dia da apresentação
+    * MUDANÇA: Timer visível, atualizações no design.
 * 0.1.1 - 07/06 
     * Entrega final
     * MUDANÇA: Atualização no design, adicionado o timer, adicionado telas de derrota e vitória e resolução de bugs. 
