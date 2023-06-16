@@ -6,7 +6,7 @@
 
 # Pinball Perfect City 
 
-## Pimbolleiros
+## Pinbolleiros
 
 ## Integrantes: Beatriz de Castilho Ferreira, Celio da Silva Felipe, Lara Marina de Oliveira e Lucca Raulynaitis.
 ## Professores Orientadores: Fabiano Onça, Victor Quiroz, Eduardo Savino, Renata Muniz e Jefferson de Oliveira.
@@ -14,7 +14,7 @@
 ## Descrição
 
 <p align="center">
-<img src=https://drive.google.com/file/d/1CsJKGoHBoN3IRQe8WG8B9G133xuHaTKi/view?usp=drive_link alt="PinballPerfectCity" border="0">
+<img src=https://github.com/2023-1-MCC1/Projeto8/blob/main/Pinball/PimboleirosGame/Tela%20de%20in%C3%ADcio.jpg alt="PinballPerfectCity" border="0">
 <a href="http://www.nyphotographic.com/"> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
 </p>
 
@@ -65,7 +65,7 @@ Para abrir este projeto você necessita das seguintes ferramentas:
     * Trabalho em andamento
 
 ## 📋 Licença/License
-https://www.canva.com/policies/content-license-agreement/
+http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1
 
 
 ## 🎓 Referências
@@ -76,3 +76,18 @@ Aqui estão as referências usadas no projeto.
 2. <https://github.com/gabrieldejesus/readme-model>
 3. <https://creativecommons.org/share-your-work/>
 4. <https://freesound.org/>
+   
+   GERADOR DE IMAGENS
+   
+   Bing - https://www.bing.com/create
+   
+   IMAGENS EM PIXEL 
+   
+   Piskel - https://www.piskelapp.com/
+   
+   REMOVEDOR DE FUNDOS
+   https://www.remove.bg/pt-br
+   
+   EDIÇÃO DE IMAGENS
+   
+   https://www.canva.com/pt_br/
